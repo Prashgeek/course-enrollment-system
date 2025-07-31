@@ -1,0 +1,255 @@
+.enrollments-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.enrollments-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.enrollments-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 12px;
+}
+
+.enrollments-subtitle {
+  font-size: 1.1rem;
+  color: #6b7280;
+}
+
+.no-enrollments {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #f9fafb;
+  border-radius: 16px;
+  border: 2px dashed #d1d5db;
+}
+
+.no-enrollments-icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.no-enrollments h3 {
+  color: #374151;
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+.no-enrollments p {
+  color: #6b7280;
+  font-size: 1rem;
+  margin-bottom: 24px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.browse-courses-btn {
+  display: inline-block;
+  background-color: #3b82f6;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.browse-courses-btn:hover {
+  background-color: #2563eb;
+}
+
+.enrollments-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 24px;
+}
+
+.enrollment-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+}
+
+.enrollment-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.enrollment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.course-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+  flex: 1;
+  margin-right: 12px;
+}
+
+.status-badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.status-badge.active {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.status-badge.completed {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.status-badge.dropped {
+  background-color: #fecaca;
+  color: #991b1b;
+}
+
+.enrollment-content {
+  margin-bottom: 20px;
+}
+
+.course-description {
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  font-size: 0.95rem;
+}
+
+.enrollment-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.detail-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.detail-label {
+  font-weight: 500;
+  color: #374151;
+  min-width: 100px;
+  font-size: 0.875rem;
+}
+
+.detail-value {
+  color: #6b7280;
+  font-size: 0.875rem;
+  flex: 1;
+}
+
+.progress-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 8px;
+  background-color: #e5e7eb;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #10b981;
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #374151;
+  min-width: 35px;
+}
+
+.enrollment-actions {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 16px;
+  border-top: 1px solid #f3f4f6;
+}
+
+.unenroll-btn {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.unenroll-btn:hover {
+  background-color: #dc2626;
+}
+
+@media (max-width: 768px) {
+  .enrollments-container {
+    padding: 16px;
+  }
+  
+  .enrollments-header h1 {
+    font-size: 2rem;
+  }
+  
+  .enrollments-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .enrollment-card {
+    padding: 16px;
+  }
+  
+  .enrollment-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .course-title {
+    margin-right: 0;
+  }
+  
+  .detail-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  
+  .detail-label {
+    min-width: auto;
+  }
+  
+  .progress-section {
+    width: 100%;
+  }
+}
