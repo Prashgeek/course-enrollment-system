@@ -8,4 +8,4 @@
   status = 200
 
 [build.environment]
-  REACT_APP_API_URL = "https://your-render-app.onrender.com/api"
+  REACT_APP_API_URL = "https://course-enrollment-backend.onrender.com/api"

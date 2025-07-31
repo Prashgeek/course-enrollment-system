@@ -12,7 +12,7 @@ const app = express();
 // Allowed frontend origins (local + production)
 const allowedOrigins = [
   'http://localhost:3000',                    // Local React dev server
-  'https://your-netlify-app.netlify.app'     // Production frontend URL (replace this)
+  'https://688b60eda61dca00a27d58e2--tiny-sfogliatella-91eb29.netlify.app/'     // Production frontend URL (replace this)
 ];
 
 // CORS configuration allowing multiple origins dynamically
