@@ -12,7 +12,7 @@ const app = express();
 // Allowed frontend origins (local + production)
 const allowedOrigins = [
   'http://localhost:3000',                    // Local React dev server
-  'https://your-netlify-app.netlify.app'     // Production frontend URL (replace this)
+  'https://course-enrollment-system-ya7v.vercel.app'     // Production frontend URL (replace this)
 ];
 
 // CORS configuration allowing multiple origins dynamically
